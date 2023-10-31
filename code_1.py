@@ -26,11 +26,8 @@ dfl = df
 
 ## Partie Romain - caractéristiques mécaniques de la planète
 
-dfr = df[["pl_name","hostname","default_flag","sy_snum","sy_pnum","rowid","pl_refname","pl_orbper","pl_orbsmax","pl_rade","pl_bmasse","pl_orbeccen"]]
-dfr.rename(axis="columns", mapper={"pl_name":"nom","pl_orbper":"période_orbite","pl_orbsmax":"demi_grand_axe","pl_rade":"rayon","pl_bmasse":"masse","pl_orbeccen":"excentricité"},inplace=True)
+dfr = df
 
-# Répartition des orbites
-dfr.demi_grand_axe.plot(xlabel="Demi grand axe de l'orbite (en unités astronomiques)",ylabel="Nombre de planètes")
 
 ## Partie Ombline - caractéristiques physico-chimiques des planètes
 dfo = df
@@ -40,7 +37,6 @@ par_etoile=df.groupby(by='hostname')
 dfc = df
 dfc_entité=dfc[['pl_name', 'hostname', 'sy_snum', 'sy_pnum', ]]
 
-<<<<<<< HEAD
 #étude des températures des planètes
 
 temperature = dfo["st_teff"]
@@ -56,10 +52,17 @@ description_temperature = temperature.describe()
 # on lit que la moyenne de température est de 5420.06057 K
 
 
+# étudions à présent le rayon des planètes
+rayon = dfo["st_rad"]
+plt.hist(rayon, bins = 100)
+plt.show()
+
+#on voit qu'il y a peu de données au dessus de 20 rayons du Soleil
+# on va donc afficher un histogramme qui ne prend en compte que les données en dessous de cette valeure
+
+plt.hist(rayon, bins=200, )
 
 
 ## Partie Camille - 
 
 dfc = df
-=======
->>>>>>> refs/remotes/origin/main
