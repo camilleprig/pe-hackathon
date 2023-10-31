@@ -25,7 +25,7 @@ dfl = df
 
 ## Partie Romain - caractéristiques mécaniques de la planète
 
-dfr = df[["pl_name","pl_hostname","pl_default_flag","sy_snum","sy_pnum","rowid","pl_refname","pl_orbper","pl_orbsmax","pl_rade","pl_bmasse","pl_orbeccen"]]
+dfr = df[["pl_name","hostname","default_flag","sy_snum","sy_pnum","rowid","pl_refname","pl_orbper","pl_orbsmax","pl_rade","pl_bmasse","pl_orbeccen"]]
 
 
 ## Partie Ombline - caractéristiques physico-chimiques des planètes
