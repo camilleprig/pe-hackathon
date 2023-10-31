@@ -40,7 +40,6 @@ par_etoile=df.groupby(by='hostname')
 dfc = df
 dfc_entité=dfc[['pl_name', 'hostname', 'sy_snum', 'sy_pnum', ]]
 
-<<<<<<< HEAD
 #étude des températures des planètes
 
 temperature = dfo["st_teff"]
@@ -61,5 +60,3 @@ description_temperature = temperature.describe()
 ## Partie Camille - 
 
 dfc = df
-=======
->>>>>>> refs/remotes/origin/main
