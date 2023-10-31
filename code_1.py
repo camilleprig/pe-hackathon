@@ -28,3 +28,6 @@ df = df[df.default_flag == 1]
 
 
 ## Partie Ombline&Camille - caractéristiques physico-chimiques des planètes
+
+##Partie Camille
+par_etoile=df.groupby(by='hostname')
