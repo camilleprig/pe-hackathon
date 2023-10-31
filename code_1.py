@@ -36,6 +36,9 @@ dfo = df
 par_etoile=df.groupby(by='hostname')
 dfc = df
 dfc_entité=dfc[['pl_name', 'hostname', 'sy_snum', 'sy_pnum', ]]
+print("Analysons la répartition du nombre d'étoile par système solaire")
+dfc_entité.sy_snum.value_counts().plot(kind='bar')
+#On peut voir que le nombre de système avec 1 étoile est très majoriaire et que les systèmes avec 4 étoiles sont extras rares
 
 #étude des températures des planètes
 
