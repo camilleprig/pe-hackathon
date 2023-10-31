@@ -11,44 +11,11 @@ def f(x:float) -> float:
     """
     return 2*x
 
-
-
-import pandas as pd
 df=pd.read_csv('fichier.csv')
 
 df.head()
 
 df = df[df.default_flag == 1]
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-data = pd.read_csv(fichier.csv) 
-
 
 ## Partie Lise - la découverte des planètes
 
