@@ -19,12 +19,20 @@ df = df[df.default_flag == 1]
 
 ## Partie Lise - la découverte des planètes
 
+dfl = df
 
 
 
 ## Partie Romain - caractéristiques mécaniques de la planète
 
+dfr = df
 
 
+## Partie Ombline - caractéristiques physico-chimiques des planètes
 
-## Partie Ombline&Camille - caractéristiques physico-chimiques des planètes
+dfo = df
+
+
+## Partie Camille - 
+
+dfc = df
