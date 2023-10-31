@@ -3,6 +3,7 @@
 import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
+import seaborn as sns
 
 
 def f(x:float) -> float:
@@ -29,10 +30,14 @@ dfr = df
 
 
 ## Partie Ombline - caractéristiques physico-chimiques des planètes
-
 dfo = df
 
+##Partie Camille, analyse des systèmes 
+par_etoile=df.groupby(by='hostname')
+dfc = df
+dfc_entité=dfc[['pl_name', 'hostname', 'sy_snum', 'sy_pnum', ]]
 
+<<<<<<< HEAD
 #étude des températures des planètes
 
 temperature = dfo["st_teff"]
@@ -53,3 +58,5 @@ description_temperature = temperature.describe()
 ## Partie Camille - 
 
 dfc = df
+=======
+>>>>>>> refs/remotes/origin/main
