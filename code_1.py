@@ -33,6 +33,23 @@ dfr = df
 dfo = df
 
 
+#étude des températures des planètes
+
+temperature = dfo["st_teff"]
+
+#regardons quelle est la tendance de température des planètes
+plt.hist(temperature, bins=1000)
+plt.show()
+
+#on voit qu'une température est privilégiée, regardons laquelle
+
+description_temperature = temperature.describe()
+
+# on lit que la moyenne de température est de 5420.06057 K
+
+
+
+
 ## Partie Camille - 
 
 dfc = df
