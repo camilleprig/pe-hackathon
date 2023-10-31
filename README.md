@@ -9,4 +9,6 @@ PUIS Camille discute avec ombline
 
 Romain : caractéristiques orbitales (chimique)
 
-Ombline : caractéristiques Janco
+Ombline : caractéristiques physico-chimiques
+
+Lise : étude des découvertes
