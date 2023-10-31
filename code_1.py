@@ -3,6 +3,7 @@
 import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
+import seaborn as sns
 
 
 def f(x:float) -> float:
@@ -32,10 +33,33 @@ dfr.rename(axis="columns", mapper={"pl_name":"nom","pl_orbper":"période_orbite"
 dfr.demi_grand_axe.plot(xlabel="Demi grand axe de l'orbite (en unités astronomiques)",ylabel="Nombre de planètes")
 
 ## Partie Ombline - caractéristiques physico-chimiques des planètes
-
 dfo = df
+
+##Partie Camille, analyse des systèmes 
+par_etoile=df.groupby(by='hostname')
+dfc = df
+dfc_entité=dfc[['pl_name', 'hostname', 'sy_snum', 'sy_pnum', ]]
+
+<<<<<<< HEAD
+#étude des températures des planètes
+
+temperature = dfo["st_teff"]
+
+#regardons quelle est la tendance de température des planètes
+plt.hist(temperature, bins=1000)
+plt.show()
+
+#on voit qu'une température est privilégiée, regardons laquelle
+
+description_temperature = temperature.describe()
+
+# on lit que la moyenne de température est de 5420.06057 K
+
+
 
 
 ## Partie Camille - 
 
 dfc = df
+=======
+>>>>>>> refs/remotes/origin/main
