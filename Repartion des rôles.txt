@@ -1,0 +1,5 @@
+Repartion des rôles:
+-Création du github: Camille
+-Importation des données : Ombline
+-Mise en forme des données: Camille
+-Analyse orbites et masse: Romain  -Analyse des systèmes: Camille -Analyse de la découverte: Lise -Analyse des proriétés physico-chimiques: Ombline
